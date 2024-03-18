@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    font-family: "Roboto Slab", cursive;
+}
+
+body{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /*campo de visão de altura*/
+}
+.calculadora-container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: #bc94eb;
+    box-shadow: 2px 2px 5px 0.1 rgba(0,0,0,0.4);
+    
+}
+
+.calculadora-input{
+    background-color: aquamarine;
+    width: 92%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    border-radius: 5px;
+    border: 2px solid #202020;
+    box-shadow: 2px 2px 5px 0.1 rgba(0,0,0,0.4);
+
+}
+
+.calculadora-botoes{
+    display: grid; /*grid é grade*/
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /*espaço*/
+    padding-top: 5px;
+    border-radius: 4px;
+    
+}
+
+.calculadora-botao{
+    padding: 15px;
+    font-size: 18px;
+    background-color: rgb(250, 250, 255);
+    border: 2px solid #db69eb;
+    cursor: pointer;
+    width: 95%;
+    border-radius:4px;
+    box-shadow: 2px 2px 5px 0.1px black;
+    transition: transform 0.5s;
+    
+}
+
+.calculadora-botao:hover{
+    background-color: #42d3ff;
+    transform: translateY(3px);
+}
+
+.calculadora-botao-operador{
+    background-color: #ff5cd6;
+    color: white;
+
+}
+
+.calculadora-botao-clear,
+.calculadora-botao-igual,
+.calculadora-botao-0
+{
+background-color: #ff5cd6;
+color: white;
+
+}
